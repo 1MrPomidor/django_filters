@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prosto Site</title>
+</head>
+<body>
+
+<form action="" method="get">
+    {{ form.title }}
+    <br>
+    {{ form.category }}
+
+    <button type="submit">Искать</button>
+</form>
+<br>
+<br>
+{% for i in products %}
+<h4>{{ i.title }}</h4>
+{{ i.price }}
+<br>
+{% endfor %}
+</body>
+</html>
